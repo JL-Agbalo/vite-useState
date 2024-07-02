@@ -5,7 +5,7 @@ import './App.css'
 
 function NameList(){
   const [list, setList] = useState(["Jack", "Nard", "John"])
-  const [name, setName] = useState("");
+  const [name, setName] = useState(() => "Jack");
   const addName = () =>{
    setList([...list, name]) 
   }
